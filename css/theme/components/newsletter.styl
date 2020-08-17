@@ -1,0 +1,51 @@
+.newsletter
+    #news-footer &
+        &__form
+            @media media-min-lg
+                flex-wrap: nowrap
+
+        &__text
+            @media media-min-lg
+                flex: 0 1 530px
+                margin-bottom: .5rem
+
+            .ico
+                margin-right: 1rem
+                width: 60px
+                height: 30px
+                fill: var(--primary)
+
+            .title
+                display: flex
+                align-items: center
+                font-weight: bold
+                font-size: 13px
+
+        &__email
+            @media media-min-lg
+                flex: 1 1 0%
+
+            .input-email
+                border: 0
+                box-shadow: none
+                opacity: .4
+
+                &::placeholder
+                    color: var(--text)
+
+                &:focus::placeholder
+                    color: transparent
+
+        &__submit
+            @media media-min-lg
+                flex: 0 1 145px
+
+        &__btn
+            display: flex
+            justify-content: center
+            align-items: center
+            height: 40px
+            border-radius: 40px
+
+#news-footer
+    container()

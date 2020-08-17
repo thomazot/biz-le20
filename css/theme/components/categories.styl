@@ -1,5 +1,18 @@
-@media (max-width: 992px)
+@media media-max-lg
     .categories
+        img, svg
+            display: none
+
+        &__show
+            order: -1
+            margin-top: 30px
+            margin-right: 0
+            background: none
+            color: var(--primary)
+
+            svg
+                fill: currentColor
+
         .parent
             position: relative
 
@@ -11,12 +24,13 @@
 
             > a
                 display: flex
-                min-height: 48px
                 justify-content: flex-start
                 align-items: center
+                min-height: 48px
 
             &:after
                 icon('\f054')
+
                 position: absolute
                 top: 0
                 right: 0
@@ -26,9 +40,10 @@
                 align-items: center
                 width: 48px
                 height: 48px
-                font-size: 20px
-                background: rgba(255, 255, 255, 0.1)
-                transition: all 0.2s ease
+                background: rgba(255, 255, 255, .1)
+                color: var(--primary-contrast)
+                font-size: 16px
+                transition: all .2s ease
 
             &.on
                 &:after
@@ -40,22 +55,67 @@
         .all-li--0
             padding-bottom: 0
 
-@media (min-width: 993px)
+@media media-min-lg
     .categories
-        margin-bottom: 0 !important
-        background: none
         flex: 1
+        margin-bottom: 0 !important
         min-width: 0
-
-        .a--0
-            color: var(--primary)
-            white-space: nowrap
-            font-size: 14px
-            font-weight: semibold
-            text-transform: uppercase
-
-        .li--0
-            order: 1
+        background: none
 
         &__all
-            order: 2
+            display: none
+
+        .ul--0
+            position: static
+            justify-content: center
+
+        .a--0
+            margin: 0 0 8px
+            height: 30px
+            border-radius: 30px
+            color: var(--color-text)
+            white-space: nowrap
+            font-weight: regular
+            font-size: 14px
+
+        .li--0
+            position: static
+            flex: 0
+            order: 1
+
+            &:hover
+                .a--0
+                    background: var(--primary)
+
+        .box--1
+            padding: 0
+            width: 100%
+            box-shadow: none
+
+        .ul--1
+            display: flex
+            max-width: none
+            width: 100%
+
+        .li--1
+            flex: 0 1 50%
+
+            &:first-child
+                .a--1
+                    text-align: right
+
+            &:hover
+                &, .a--1
+                    background: none
+                    box-shadow: none
+
+        .a--1
+            padding: 0
+
+            span
+                display: none
+
+            img
+                display: inline-block
+                margin: 0
+                max-height: none

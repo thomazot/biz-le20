@@ -1,0 +1,25 @@
+.help-center
+    display: flex
+    flex: 0 1 165px
+    justify-content: flex-start
+    align-items: center
+    height: 30px
+    color: var(--color-text)
+    text-align: left
+    font-size: 12px
+
+    &:hover
+        color: var(--color-text)
+
+    @media media-max-lg
+        position: absolute
+        top: 0
+        left: 0
+        padding: 0 16px
+        width: 50%
+        background: var(--primary)
+        color: var(--primary-contrast)
+        font-size: 11px
+
+    .opc &
+        display: none

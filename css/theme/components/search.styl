@@ -1,2 +1,63 @@
+
 .search
-    display: none
+    .header &
+        @media media-min-sm
+            flex: 0 1 200px
+
+        &__button
+            @media media-max-sm
+                background: none
+                color: var(--primary)
+
+            @media media-min-sm
+                display: flex
+                order: -1
+                justify-content: flex-end
+                align-items: center
+                padding: 0
+                width: 48px
+                height: 48px
+                background: none
+                box-shadow: none
+                color: var(--primary)
+
+            .ico
+                margin-bottom: -2px
+                width: 14px
+                height: 14px
+                fill: currentColor
+
+                @media media-max-sm
+                    width: 20px
+                    height: 20px
+
+        &__input
+            @media media-min-sm
+                padding-left: 7px
+                border: 0
+                box-shadow: none
+
+                &::placeholder
+                    color: var(--color-text)
+                    font-size: 12px
+
+                &:focus::placeholder
+                    color: transparent
+
+        &__hide
+            @media media-max-sm
+                top: 30px
+                display: flex
+                justify-content: center
+                align-items: center
+                height: 55px
+
+        &.on
+            .search__form .input-box
+                @media media-max-sm
+                    top: 30px
+
+            .search__input
+                @media media-max-sm
+                    height: 55px
+                    border-radius: 0 !important

@@ -22,7 +22,6 @@
     --button-hover: button_bg_hover
     --button-contrast: button_font
     --button-contrast-hover: button_font_hover
-
     // Socials
     --youtube: #cc0404
     --facebook: #3b5998
@@ -31,12 +30,17 @@
     --thumblr: #32506d
     --linkedin: #007bb5
     --instagram: #e4405f
+    // default
+    --color-text: #414445
+    --color-title: #525b63
+    --color-black: #000
 
 /*
  * Base
  * Estilo base do elementos do Html
  */
 body
+    color: var(--color-text)
     font-family: font
 
 .wrapper-container
@@ -81,6 +85,5 @@ body
 .categories .ul--0
     max-width: viewport
 
-.wrapper
-    svg
-        fill: currentColor
+.main
+    margin: 0

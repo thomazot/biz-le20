@@ -1,0 +1,54 @@
+<div class="footer__row">
+    <div class="footer__box footer__box--le20">
+        <h3 class="footer__title">Le20</h3>
+
+        <div class="footer__content">
+            <p>Rua Coronel Alfredo Flaquer, 125,</p>
+            <p>Sala 13 Santo André,</p>
+            <p>São Paulo, 09020-030</p>
+            <p>Brasil</p>
+            <p><a href="tel:1148621016">11 <span>4862-1016</span></a></p>
+            <p><a href="mailto:help@le20.com.br">help@le20.com.br</a></p>
+        </div>
+    </div>
+    <div class="footer__box">
+        <h3 class="footer__title">Dúvidas</h3>
+
+        <div class="footer__content">
+            {{block type="menubuilder/output" identifier="footer-duvidas"}}
+        </div>
+    </div>
+    <div class="footer__box">
+        <h3 class="footer__title">Departamentos</h3>
+
+        <div class="footer__content">
+            {{block type="menubuilder/output" identifier="footer-departamentos"}}
+        </div>
+    </div>
+    <div class="footer__box">
+        <h3 class="footer__title">Redes Sociais</h3>
+
+        <div class="footer__content">
+            {{widget type="interface/widget_social" template="interface/widgets/social.phtml" identificador="perfis_footer"  redes="all"}}
+        </div>
+    </div>
+</div>
+
+<div class="footer__row">
+    <div class="footer__box">
+        <h3 class="footer__title footer__title--black">Formas de Pagamento</h3>
+        <div class="footer__content">
+            {{widget type="interface/widget_pagtos" template="interface/widgets/pagtos.phtml" identificador="pagtos_footer"  pagtos="all"}}
+        </div>
+    </div>
+    <div class="footer__box">
+        <h3 class="footer__title footer__title--black">Selos e Certificados</h3>
+        <div class="footer__content">
+            {{widget type="interface/widget_seals" template="interface/widgets/seals.phtml" identificador="selos_footer"  seals="all"}}
+        </div>
+    </div>
+</div>
+
+<div class="footer__copyright">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</div>

@@ -1,0 +1,42 @@
+<div class="prod__img">
+    @fotos
+    @compartilhar
+    @selos
+</div>
+<div class="prod__shop">	
+	<div class="col">	
+        <div class="prod__name">
+			<h1>@nome</h1>
+			
+        </div>
+
+        @variacoes
+        @atributo(itens_inclusos)
+        @bt(sobconsulta "Sob Consulta")
+        @temporizador
+        
+        @if(is_disponivel)
+            <div class="prod__prices">
+                @preco
+                <div class="prod__buys">
+                    @bt(comprar)
+                    @links
+                </div>
+            </div>
+        
+            @simulador-frete
+		@else(is_disponivel)		
+			<div class="prod__esgotado">
+				<div class="title title--sm">Produto Esgotado</div>
+				@alertas
+			</div>
+		@endif(is_disponivel)
+	</div>
+</div>
+
+@if(guia_de_lentes)
+<div id="guia_de_lentes">
+{{widget type="cms/widget_block" template="cms/widget/static_block/default.phtml" block_id="26"}}
+</div>
+<script>modal('guia_de_lentes')</script>
+@endif(guia_de_lentes)

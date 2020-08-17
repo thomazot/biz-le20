@@ -1,4 +1,18 @@
 .header
+    @media media-max-lg
+        position: static
+        padding-top: 35px
+        padding-right: 10px
+
     &-container
         position: sticky
         top: 0
+        box-shadow: none
+
+        @media media-max-lg
+            background: #fff
+
+        .scrolling &
+            @media media-min-lg
+                border-bottom: solid 1px rgba(0, 0, 0, .1)
+                box-shadow: 0 0 10px rgba(0, 0, 0, .2)

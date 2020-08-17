@@ -1,0 +1,57 @@
+.about
+    img
+        width: 100%
+        object-fit: contain
+
+    &__container
+        margin: -10px
+
+    &__main
+        @media media-min-lg
+            display: flex
+
+    &__banner, &__content
+        padding: 10px
+
+    &__title
+        margin: 50px auto
+        max-width: 100%
+        width: 500px
+        color: var(--color-title)
+        text-align: center
+        font-weight: bold
+        font-size: 22px
+
+    &__subtitle
+        padding: 10px 0
+        color: var(--primary)
+        font-weight: bold
+        font-size: 18px
+
+    &__info
+        padding: 20px
+
+        @media media-min-lg
+            padding: 20px 30px
+
+    &__description
+        font-size: 12px
+
+    &__actions
+        padding: 14px 0
+
+    &__link
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 140px
+        height: 40px
+        border: solid 1px #acacac
+        border-radius: 40px
+        color: #aaabab
+        font-weight: bold
+        font-size: 12px
+
+        &:hover
+            background: @color
+            color: #fff

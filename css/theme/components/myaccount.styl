@@ -1,0 +1,31 @@
+.myaccount
+    flex: 0 1 125px
+    color: var(--color-text)
+    font-size: 12px
+
+    @media media-max-lg
+        position: absolute
+        top: 0
+        right: 0
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        padding: 0 16px
+        width: 50%
+        height: 30px
+        background: var(--primary)
+        color: var(--primary-contrast)
+        font-size: 11px
+
+    &__header
+        @media media-min-lg
+            text-align: center
+
+        a
+            color: currentColor
+
+    &__content
+        display: none !important
+
+    .opc &
+        display: none

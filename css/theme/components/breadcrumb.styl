@@ -1,0 +1,35 @@
+.breadcrumb
+    background: #f2f4f7
+
+    .catalogsearch-result-index &
+        display: none
+
+    &__list
+        container()
+
+        padding: 11px 0
+
+    &__item
+        margin-right: 10px
+        color: var(--color-text)
+        font-weight: regular
+        font-size: 12px
+
+        a
+            color: currentColor
+
+    &__last
+        font-weight: bold
+
+    &__sep
+        display: none
+
+    &__home
+        .breadcrumb__link:before
+            display: none
+
+    .catalog-category-view &
+        display: none
+
+    .catalog-product-view &
+        margin-top: -16px
