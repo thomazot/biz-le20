@@ -2,8 +2,14 @@
     &__white
         background: #fff
 
-    // &__bg
-    // background: url(product) repeat center center
+    &__bg
+        --background: #f2f4f7
+
+        &
+            background: var(--background)
+
+            shadowBorder()
+
     &__white, &__bg
         padding: 60px 20px
 
